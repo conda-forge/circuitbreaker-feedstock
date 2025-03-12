@@ -1,5 +1,5 @@
 {% set name = "circuitbreaker" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/circuitbreaker-{{ version }}.tar.gz
-  sha256: 28110761ca81a2accbd6b33186bc8c433e69b0933d85e89f280028dbb8c1dd14
+  sha256: b09c3f7a8614df6d43e780cdd80931fad5ccb1d23418dbe4c15bcfe6db12528c
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
